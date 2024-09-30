@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herb Express - Sugar Care Capsules</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header Section with Background Image -->
+        <header class="hero-section">
+            <div class="overlay">
+                <h1>SUGAR CARE CAPSULES</h1>
+                <p>Reduce Blood Sugar by 30% in 3 Months</p>
+                <p class="sub-text">Trusted by our Regular Customers</p>
+            </div>
+        </header>
+
+        <!-- Content Section -->
+        <section class="content-section">
+            <div class="content-wrapper">
+                <h2>आपका जीवन अब आपके नियंत्रण में - सही दवा से पाए शुगर कंट्रोल करने की सही दिशा</h2>
+                <p>
+                    बीमारियां जीवन का एक प्राकृतिक हिस्सा है, लेकिन इलाज का सबसे अच्छा तरीका है—प्रकृति।
+                    और प्रकृति के पास ही इन समस्याओं का निवारण है। इसलिए हम लाए हैं आपके लिए प्रकृति के अद्भुत तत्वों से समृद्ध प्रोडक्ट्स।
+                    हम सिर्फ एक आयुर्वेदिक ब्रांड नहीं हैं, हम लाए हैं आपके लिए उच्च क्वालिटी से बनी दवा।
+                </p>
+
+                <ul>
+                    <li>100% प्राकृतिक और प्रामाणिक (100% Natural and Authentic)</li>
+                    <li>2-3 महीने में स्पष्ट परिणाम (Start showing results in 2-3 Months)</li>
+                    <li>चिकित्सकीय रूप से परीक्षणित और प्रमाणित (Clinically Tested and certified)</li>
+                </ul>
+
+                <h3>SUGAR CARE CAPSULES</h3>
+                <p>
+                    क्या आप भी अपनी मनपसंदीदा मिठाई का लुफ़्त नहीं उठा पाते? रबड़ी, गुलाबजामुन, रासगुला, मोदक, श्रीखंड, चॉकलेट जैसे स्वादिष्ट व्यंजन
+                    अब बस आपके पुराने दिनों की यादों में रह गए हैं। चिंता मत करें! अब हम लाए हैं - <strong>SUGAR CARE CAPSULES</strong>.
+                </p>
+
+                <p>जीवन की मिठास को वापस पाए SUGAR CARE CAPSULES के डेली 1 डोज से!</p>
+
+                <h3>फायदे:</h3>
+                <ul>
+                    <li>बेहतर रक्त शर्करा मेटाबॉलिज्म (Enhanced blood sugar metabolism)</li>
+                    <li>सुधारित इंसुलिन संवेदनशीलता (Improved insulin sensitivity)</li>
+                    <li>प्रभावी रक्त शर्करा प्रबंधन (Effective blood sugar management)</li>
+                    <li>समग्र स्वास्थ्य को बढ़ावा देता है (Promotes overall well-being)</li>
+                    <li>सुरक्षित और प्राकृतिक फॉर्मूला (Safe and natural formula)</li>
+                </ul>
+
+                <p>
+                    यह एक प्राकृतिक आहार है जो आपके स्वास्थ के लिए बिल्कुल सुरक्षित है।
+                    इसमें 12 आयुर्वेदिक जड़ी-बूटियों का मिश्रण है जैसे जामुन, करेला, तुलसी, नीम, और मेथी। 
+                    यह उत्पाद हमारे 15 वर्षों के अनुभव और गहन देखभाल से निर्मित है, और यह चिकित्सकीय परीक्षणित और प्रमाणित है।
+                </p>
+            </div>
+        </section>
+
+        <!-- Carousel Section -->
+        <section class="carousel-section">
+            <h3>Our Herb info</h3>
+            <div class="carousel-container">
+                <button class="carousel-control prev" onclick="prevSlide()">❮</button>
+                <div class="carousel-slides">
+                    <img src="assets/IMG_0834.JPG" class="carousel-image" alt="Herb Image 1">
+                    <img src="assets/IMG_0835.JPG" class="carousel-image" alt="Herb Image 2">
+                    <img src="assets/IMG_0836.JPG" class="carousel-image" alt="Herb Image 3">
+                    <img src="assets/IMG_0837.JPG" class="carousel-image" alt="Herb Image 4">
+                </div>
+                <button class="carousel-control next" onclick="nextSlide()">❯</button>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="form-section">
+            <h2>Submit Your Details</h2>
+            <form id="data-form" action="/submit" method="POST">
+                <div class="form-group">
+                    <label for="name" class="required">Name:*</label>
+                    <input type="text" id="name" name="Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address" class="required">Address:*</label>
+                    <input type="text" id="address" name="Address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="required">Phone Number:*</label>
+                    <input type="tel" id="phone" name="primaryPhone" required pattern="\d{10}" minlength="10" maxlength="10" title="Please enter a 10-digit phone number">
+                </div>
+                
+                <div class="form-group">
+                    <label for="alt-phone">Alternative Number:</label>
+                    <input type="tel" id="alt-phone" name="secondaryPhone" pattern="\d{10}" minlength="10" maxlength="10" title="Please enter a 10-digit phone number">
+                </div>
+
+                <button type="submit" class="submit-btn">Order Now</button>
+                
+            </form>
+        </section>
+
+        <!-- Table Section for Submitted Data -->
+        <!-- <section class="table-section">
+            <h2>Submitted Data</h2>
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Phone No</th>
+                        <th>Alternative No</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    Dynamically added rows will go here -->
+                <!-- </tbody>
+            </table>
+        </section> -->
+       
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.carousel-image');
+            const totalSlides = slides.length;
+    
+            function showSlide(index) {
+                // Ensure index is within bounds
+                if (index >= totalSlides) {
+                    currentSlide = 0;
+                } else if (index < 0) {
+                    currentSlide = totalSlides - 1;
+                } else {
+                    currentSlide = index;
+                }
+                
+                // Hide all slides
+                slides.forEach((slide, i) => {
+                    slide.style.display = i === currentSlide ? 'block' : 'none';
+                });
+            }
+    
+            function nextSlide() {
+                showSlide(currentSlide + 1);
+            }
+    
+            function prevSlide() {
+                showSlide(currentSlide - 1);
+            }
+    
+            // Show the first slide initially
+            showSlide(currentSlide);
+
+            document.getElementById('data-form').addEventListener('submit', function(event) {
+           
+
+           // Get form values
+           var name = document.getElementById('Name').value;
+           var address = document.getElementById('address').value;
+           var phone = document.getElementById('phone').value;
+           var altPhone = document.getElementById('alt-phone').value;
+
+
+           // Get the table body to append the new row
+           var table = document.getElementById('data-table').getElementsByTagName('tbody')[0];
+           var newRow = table.insertRow();
+
+           // Insert new cells for each form field
+           var nameCell = newRow.insertCell(0);
+           var addressCell = newRow.insertCell(1);
+           var phoneCell = newRow.insertCell(2);
+           var altPhoneCell = newRow.insertCell(3);
+
+           // Add the form data to the cells
+           nameCell.textContent = name;
+           addressCell.textContent = address;
+           phoneCell.textContent = phone;
+           altPhoneCell.textContent = altPhone;
+
+           // Clear the form after submission
+          
+           document.getElementById('data-form').reset();
+          
+           
+       });
+    
+        </script>
+
+
+     
+    </div>
+    <div id="bottom-bar">
+        <p>Thank you for visiting our website!</p>
+    </div>
+   
+</body>
+
+</html>
