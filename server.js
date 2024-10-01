@@ -51,7 +51,7 @@ client.messages
         
         Thank you for your order! 
         `, // Custom dynamic body message
-        to: 'whatsapp:+919579871856' // Recipient's WhatsApp number
+        to: 'whatsapp:+917737265211' // Recipient's WhatsApp number
     })
     .then(message => console.log("Message SID:", message.sid, "Message sent successfully", message))
     .catch(err => console.error("Error occurred:", err));
