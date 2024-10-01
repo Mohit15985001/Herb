@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 });
 
 // Handle form submission
-app.post('/submit', (req, res) => {
+app.post('https://herb-q8yq192hg-mohitnathwanis-projects.vercel.app'+'/submit', (req, res) => {
     // const { Name, Address, primaryPhone,secondaryPhone } = req.body;
     // // Define the Excel file path
     // const filePath = './Herbb.xlsx';
