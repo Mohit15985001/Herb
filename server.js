@@ -1,5 +1,5 @@
 const express = require('express');
-require('dotenv').config();
+
 const bodyParser = require('body-parser');
 const path = require('path');
 const XLSX = require('xlsx');
