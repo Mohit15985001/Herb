@@ -49,7 +49,7 @@ client.messages
         Primary Phone: ${primaryPhone || "(Primary phone not provided)"}
         Secondary Phone: ${secondaryPhone || "NA"}
         
-        Thank you for your order! We will contact you if any further information is needed.
+        Thank you for your order! 
         `, // Custom dynamic body message
         to: 'whatsapp:+919579871856' // Recipient's WhatsApp number
     })
