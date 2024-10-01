@@ -21,35 +21,35 @@ app.get('/', (req, res) => {
 
 // Handle form submission
 app.post('/submit', (req, res) => {
-    const { Name, Address, primaryPhone,secondaryPhone } = req.body;
-    // Define the Excel file path
-    const filePath = './Herbb.xlsx';
-    // Check if the Excel file exists, otherwise create it
-    let workbook;
-    let worksheet;
+    // const { Name, Address, primaryPhone,secondaryPhone } = req.body;
+    // // Define the Excel file path
+    // const filePath = './Herbb.xlsx';
+    // // Check if the Excel file exists, otherwise create it
+    // let workbook;
+    // let worksheet;
 
-    if (fs.existsSync(filePath)) {
+    // if (fs.existsSync(filePath)) {
 
-        workbook = XLSX.readFile(filePath);
-        worksheet = workbook.Sheets['Sheet1'];
-    } else {
+    //     workbook = XLSX.readFile(filePath);
+    //     worksheet = workbook.Sheets['Sheet1'];
+    // } else {
 
-        workbook = XLSX.utils.book_new();
-        worksheet = XLSX.utils.aoa_to_sheet([['Name', 'Address', 'primaryPhone','secondaryPhone']]); // Add headers
-        XLSX.utils.book_append_sheet(workbook, worksheet, 'Sheet1');
-    }
+    //     workbook = XLSX.utils.book_new();
+    //     worksheet = XLSX.utils.aoa_to_sheet([['Name', 'Address', 'primaryPhone','secondaryPhone']]); // Add headers
+    //     XLSX.utils.book_append_sheet(workbook, worksheet, 'Sheet1');
+    // }
 
-    // Get current data in worksheet
-    const data = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
-    const date = new Date().toISOString().slice(0,10); // Format as YYYY-MM-DD
-    data.push([Name, Address, primaryPhone,secondaryPhone,date]); // Add new form data
+    // // Get current data in worksheet
+    // const data = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+    // const date = new Date().toISOString().slice(0,10); // Format as YYYY-MM-DD
+    // data.push([Name, Address, primaryPhone,secondaryPhone,date]); // Add new form data
 
-    // Update the worksheet with new data
-    const newWorksheet = XLSX.utils.aoa_to_sheet(data);
-    workbook.Sheets['Sheet1'] = newWorksheet;
+    // // Update the worksheet with new data
+    // const newWorksheet = XLSX.utils.aoa_to_sheet(data);
+    // workbook.Sheets['Sheet1'] = newWorksheet;
 
-    // Write the workbook to the file
-    XLSX.writeFile(workbook, filePath);
+    // // Write the workbook to the file
+    // XLSX.writeFile(workbook, filePath);
 
 
     // Send a response
