@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 
 // Handle form submission
 app.post('/submit', (req, res) => {
-    const { Name, Address, primaryPhone,secondaryPhone } = req.body;
+    const { Name, Address, primaryPhone,secondaryPhone } =  req.body;
     const data = {
         Name: Name,
         Address: Address,
