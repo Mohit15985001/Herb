@@ -1,4 +1,5 @@
 const express = require('express');
+require('dotenv').config();
 const bodyParser = require('body-parser');
 const path = require('path');
 const XLSX = require('xlsx');
@@ -32,8 +33,8 @@ app.post('/submit', (req, res) => {
     };
     console.log(data);
 
-    const accountSid = 'AC499567cdbcd678a5dd477c0a4e711543';
-const authToken = '947fbc86fbe538856ada38602433b619';
+    const accountSid = process.env.ACCOUNT_SID;
+    const authToken = process.env.AUTH_TOKEN;
 
 const client = require('twilio')(accountSid, authToken);
 
