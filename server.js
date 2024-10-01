@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Serve the HTML form
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
-    res.sendFile(__dirname + '/style.css');
+
 });
 
 // Handle form submission
