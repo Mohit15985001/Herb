@@ -6,6 +6,28 @@
     font-family: 'Arial', sans-serif;
 }
 
+.language-switcher select {
+    background-color: #e3f9e5; /* Light green background */
+    border: 2px solid #28a745; /* Green border */
+    color: #333; /* Dark text color */
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.language-switcher select:hover {
+    background-color: #45d368; /* Slightly darker on hover */
+    color: white; /* White text on hover */
+}
+
+.language-switcher {
+    text-align: right;
+    padding: 20px;
+}
+
 /* Main Container */
 .container {
     display: flex;
